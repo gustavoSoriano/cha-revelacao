@@ -2,8 +2,34 @@ const venom = require("venom-bot");
 const CONTACTS = require("../../contacts.json");
 const MAIN = "5516997659374@c.us";
 
+const browserArgs = [
+    "--disable-web-security",
+    "--no-sandbox",
+    "--disable-web-security",
+    "--aggressive-cache-discard",
+    "--disable-cache",
+    "--disable-application-cache",
+    "--disable-offline-load-stale-cache",
+    "--disk-cache-size=0",
+    "--disable-background-networking",
+    "--disable-default-apps",
+    "--disable-extensions",
+    "--disable-sync",
+    "--disable-translate",
+    "--hide-scrollbars",
+    "--metrics-recording-only",
+    "--mute-audio",
+    "--no-first-run",
+    "--safebrowsing-disable-auto-update",
+    "--ignore-certificate-errors",
+    "--ignore-ssl-errors",
+    "--ignore-certificate-errors-spki-list",
+];
+
 module.exports = async ({ models }) => {
-    const client = await venom.create();
+    const client = await venom.create({
+        browserArgs,
+    });
     await client.sendText(MAIN, "👋 Opa!");
 
     client.onMessage(async (message) => {
