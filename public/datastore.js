@@ -1,15 +1,15 @@
 
 let user = {
 	id: 0,
-	name: "Anish",
+	name: "Botas",
 	number: "+91 91231 40293",
-	pic: "images/asdsd12f34ASd231.png"
+	pic: "images/dsaad212312aGEA12ew.png"
 };
 
 let contactList = [
 	{
 		id: 0,
-		name: "Anish",
+		name: "Botas",
 		number: "+91 91231 40293",
 		pic: "images/asdsd12f34ASd231.png",
 		lastSeen: "Apr 29 2018 17:58:02"

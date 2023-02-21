@@ -16,12 +16,12 @@ MONGO_DEBUG=false
 
 ## requests
 ```
-GET: http://localhost:9001/api/messages
+GET: http://localhost:9001/messages
 
-PUT: http://localhost:9001/api/savename  
+PUT: http://localhost:9001/savename  
 { 
     "name": "teste" 
 }
 
-POST: http://localhost:9001/api/dispatch
+POST: http://localhost:9001/dispatch
 ```
